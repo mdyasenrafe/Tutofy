@@ -1,15 +1,14 @@
 import React from "react";
 import Layout from "../components/layout/Layout";
 import Banner from "../components/home/Banner";
-import { Container } from "@mui/material";
+import StatsOverview from "../components/home/StatsOverview";
 
 export default function Home() {
   return (
     <Layout>
       <section>
-        <Container>
-          <Banner />
-        </Container>
+        <Banner />
+        <StatsOverview />
       </section>
     </Layout>
   );
