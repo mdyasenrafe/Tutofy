@@ -1,5 +1,6 @@
 import React from "react";
+import { Container } from "@mui/material";
 
 export default function Footer() {
-  return <div>Footer</div>;
+  return <Container>Footer</Container>;
 }

@@ -2,11 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../../assets/images/logo.png";
-import { HiOutlineLogout, HiOutlineViewGrid, HiOutlineX } from "react-icons/hi";
-import { TbMessage } from "react-icons/tb";
-import { IoMdNotificationsOutline } from "react-icons/io";
-import { TfiBag } from "react-icons/tfi";
+import { HiOutlineX } from "react-icons/hi";
 import { DemoImage } from "../../utils/Theme";
+import { Container } from "@mui/material";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -66,7 +64,7 @@ const Navbar = () => {
         headerFixed ? "fixed bg-white py-2 z-30  shadow-lg" : "z-30 bg-color"
       } min-w-full  transition-all delay-75 ease-in-out py-2`}
     >
-      <div className="container">
+      <Container>
         <div>
           <div className="flex justify-between items-center w-full">
             <div className="flex items-center">
@@ -82,14 +80,14 @@ const Navbar = () => {
                 </button>
               )}
 
-              <div className="ml-3">
+              <div className="lg:ml-0 ml-3">
                 <Link to="/" className="flex items-center">
                   <img
                     className="h-[40px] py-1 cursor-pointer"
                     src={logo}
                     alt=""
                   />
-                  <h1 className="hidden lg:inline mx-2">Easy Job Finder</h1>
+                  <h1 className="hidden lg:inline mx-2">Tutofy</h1>
                 </Link>
               </div>
             </div>
@@ -136,7 +134,7 @@ const Navbar = () => {
               showMenu ? "flex ease-in-out duration-300 " : "hidden"
             } absolute w-[100%] top-0 left-0 z-30 pt-[24px] bg-white h-screen `}
           >
-            <div className="container mx-auto px-8">
+            <Container>
               {/* close icon */}
               <AiOutlineClose
                 onClick={() => setShowMenu(false)}
@@ -157,10 +155,10 @@ const Navbar = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </Container>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };
