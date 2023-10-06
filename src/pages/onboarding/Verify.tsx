@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import EnterOtp from "../../assets/images/onboarding/enter_otp.svg";
+import EnterOtp from "../../assets/images/onboarding/enter_otp.png";
 import Spinner from "../../components/common/Spinner";
 import { Toast } from "../../components/common/Toast";
 
@@ -13,7 +13,11 @@ type VerifyProps = {
 export default function Verify(props: VerifyProps) {
   const { email } = props;
   const [loading, setLoading] = useState<boolean>(false);
-  const handleVerify = async () => {};
+
+  const handleVerify = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    window.location.href = "onboarding/profile";
+  };
 
   return (
     <div className=" md:grid sm:grid-cols-2 md:grid-cols-2 gap-7 spac-y-4">
@@ -30,12 +34,12 @@ export default function Verify(props: VerifyProps) {
         </div>
         <form onSubmit={handleVerify}>
           <div>
-            <label className="label">Email</label>
-            <input className="input" type="text" />
+            <label className="label">Code</label>
+            <input className="input" type="number" required />
           </div>
           <div className="flex justify-center items-center">
             <button
-              className="mt-6 h-[48px] w-full bg-primary hover:bg-indigo-800 px- rounded text-white flex justify-center"
+              className="mt-6 h-[48px] w-full bg-primary hover:bg-indigo-800 px- rounded text-white flex justify-center items-center"
               type="submit"
               disabled={loading}
             >

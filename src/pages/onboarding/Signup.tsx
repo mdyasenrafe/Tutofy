@@ -33,7 +33,8 @@ export default function Signup() {
   const location = useLocation();
   const redirectUrl = location.state?.from?.pathname || "/profile";
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     // Handle form submission
     setIsVerificationStep(true);
   };
