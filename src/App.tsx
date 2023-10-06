@@ -5,6 +5,7 @@ import "./styles/styles.css";
 import "./styles/responsive.css";
 import "./App.css";
 import Signin from "./pages/onboarding/Signin";
+import Signup from "./pages/onboarding/Signup";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Signin />,
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
   },
 ]);
 
