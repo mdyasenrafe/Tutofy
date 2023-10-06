@@ -4,7 +4,7 @@
 /* primary color variables */
 
 :root {
-  --piramary: #3c7fff;
+  --piramary: #9610ff;
   --black: #000;
   --borderBlackColor: #e1e1e1;
   --borderColor: #e2e2e2;
@@ -28,7 +28,6 @@ h3,
 h4,
 h5,
 h6,
-label,
 th {
   font-family: "Figtree", sans-serif !important;
   font-weight: bold;

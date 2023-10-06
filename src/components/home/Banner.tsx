@@ -36,7 +36,7 @@ export default function Banner() {
                 <button className="mr-[16px] flex items-center w-[168px] h-[48px] rounded-[8px] bg-primary text-white justify-center duration-300 hover:bg-indigo-800">
                   Start as Student
                 </button>
-                <button className="mr-[16px] flex items-center w-[168px] h-[48px] rounded-[8px] justify-center border-primary hover:bg-[#3c7fff] hover:text-white duration-300">
+                <button className="mr-[16px] flex items-center w-[168px] h-[48px] rounded-[8px] justify-center border-primary hover:bg-[#9610FF] hover:text-white duration-300">
                   Join as Teacher
                 </button>
               </div>
