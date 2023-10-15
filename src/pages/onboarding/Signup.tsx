@@ -93,7 +93,7 @@ export default function Signup() {
                       {roles.map((role, index) => (
                         <div
                           key={index}
-                          className="flex justify-between items-center mr-[24px]"
+                          className="flex justify-between items-center mr-[24px] cursor-pointer"
                           onClick={() => setSelectedRole(role)}
                         >
                           <div
