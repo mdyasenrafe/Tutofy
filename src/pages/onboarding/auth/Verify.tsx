@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import EnterOtp from "../../assets/images/onboarding/enter_otp.png";
-import Spinner from "../../components/common/Spinner";
-import { Toast } from "../../components/common/Toast";
+import Spinner from "../../../components/common/Spinner";
+import EnterOtp from "../../../assets/images/onboarding/enter_otp.png";
 
 type FormValues = {
   otp: number;

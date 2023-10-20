@@ -28,7 +28,8 @@ h3,
 h4,
 h5,
 h6,
-th {
+th,
+label {
   font-family: "Figtree", sans-serif !important;
   font-weight: bold;
 }
@@ -103,7 +104,6 @@ a,
 li,
 ul,
 ol,
-label,
 input,
 textarea,
 button {

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import login from "../../assets/images/onboarding/login.png";
-import Layout from "../../components/layout/Layout";
-import { Toast } from "../../components/common/Toast";
-import Spinner from "../../components/common/Spinner";
+import login from "../../../assets/images/onboarding/login.png";
 import { Container } from "@mui/material";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import Layout from "../../../components/layout/Layout";
+import Spinner from "../../../components/common/Spinner";
 
 type FormValues = {
   email: string;

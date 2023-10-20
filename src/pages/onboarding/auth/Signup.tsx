@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import signupImage from "../../assets/images/onboarding/signup.png";
+import signupImage from "../../../assets/images/onboarding/signup.png";
 import { Link, useLocation } from "react-router-dom";
-import Spinner from "../../components/common/Spinner";
-import { Toast } from "../../components/common/Toast";
-import {
-  AiOutlineCaretDown,
-  AiOutlineEye,
-  AiOutlineEyeInvisible,
-} from "react-icons/ai";
-import Layout from "../../components/layout/Layout";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import Verify from "./Verify";
 import { Container } from "@mui/system";
+import Spinner from "../../../components/common/Spinner";
+import Layout from "../../../components/layout/Layout";
 
 type Error = {
   text: string;

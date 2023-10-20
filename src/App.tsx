@@ -4,8 +4,9 @@ import Home from "./pages/Home";
 import "./styles/styles.css";
 import "./styles/responsive.css";
 import "./App.css";
-import Signin from "./pages/onboarding/Signin";
-import Signup from "./pages/onboarding/Signup";
+import Signin from "./pages/onboarding/auth/Signin";
+import Signup from "./pages/onboarding/auth/Signup";
+import CreateProfile from "./pages/onboarding/profile/CreateProfile";
 
 const router = createBrowserRouter([
   {
@@ -21,8 +22,8 @@ const router = createBrowserRouter([
     element: <Signup />,
   },
   {
-    path: "/signup",
-    element: <Signup />,
+    path: "/onboarding/profile",
+    element: <CreateProfile />,
   },
 ]);
 
